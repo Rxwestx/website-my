@@ -1,0 +1,22 @@
+@use"../const" as cn;
+
+.header{
+  width: 100%;
+  position:absolute;
+  z-index: 19px;
+  top: 60px;
+  left: 0;
+}
+.header-inner{
+  margin: 0 80px;
+}
+.header-flex{
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headert-logo{
+  > img {}
+}

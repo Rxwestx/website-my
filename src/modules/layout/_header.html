@@ -1,1 +1,27 @@
-<header>Header</header>
+<header class="header">
+  <div class="header-inner">
+    <div class="header-flex">
+      <a href="/" class="headert-logo">
+        <img src="./images/logo.png" width="99" height="62" alt="SiiD プログラミングゼミ">
+      </a>
+      <nav class="nav">
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="/courses" class="nav-link">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a href="/blogs" class="nav-link">BLOGS</a>
+            </li>
+          </ul>
+          <div class="mav-contact">
+            <%- include('../modules/components/_link.html',{ modifier:'link-nav', href: '/contact' , text: 'お問い合わせ' , }) %>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
