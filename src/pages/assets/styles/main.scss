@@ -7,7 +7,9 @@
 @use "layout/footer";
 
 // components
-@use "components/test";
+@use "components/nav";
+@use "components/link";
+@use "components/hero";
 
 // utilities
 @use "utilities/utilities";
