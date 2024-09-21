@@ -2,7 +2,7 @@
 .link {
   font-weight: bold;
   display: inline-block;
-  padding: 25px 86px;
+  padding: 28px 86px;
   font-style: 16px;
   line-height: 1;
   color: #fff;
@@ -44,5 +44,8 @@
     padding: 16px 32px;
     border-radius: 74px;
     font-size: 14px;
+  }
+  &.link-full{
+    width: 100%;
   }
 }
