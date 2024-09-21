@@ -1,7 +1,8 @@
-<% const head={ title: index.title, disc: index.desc, };%> <%- include('../modules/meta/_head.html', head) %> <%-
-      include('../modules/layout/_header.html') %><%-
-      include('../modules/meta/_head.html', head) %> <%-
-      include('../modules/components/_hero.html') %>
-
-          <script type="module" src="/assets/scripts/index.js"></script>
-          <%- include('../modules/meta/_foot.html') %>
+<% const head={ title: index.title, disc: index.desc, };%>
+  <%- include('../modules/meta/_head.html', head) %> <%- include('../modules/layout/_header.html') %><%-
+        include('../modules/components/_hero.html') %>
+        <main>
+          <%- include('../modules/components/_about.html') %>
+        </main>
+        <script type="module" src="/assets/scripts/index.js"></script>
+        <%- include('../modules/meta/_foot.html') %>
