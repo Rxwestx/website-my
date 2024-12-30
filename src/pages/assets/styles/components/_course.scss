@@ -1,1 +1,16 @@
 @use "../const" as cn;
+
+.course{
+  padding: 160px 120px;
+  color: #fff;
+  background: cn.$color-core;
+}
+.course-lis{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 85px 0 0;
+}
+.course-item{
+  width: 49.3%;
+}
