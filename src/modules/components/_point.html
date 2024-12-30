@@ -1,3 +1,11 @@
 <section class="point">
-  <%- include("../modules/components/_headline.html", { modifier:"headline-secondary", main:"POINT", sub:"3つの特徴" }) %>
+    <%- include("../modules/components/_headline.html", { modifier: "headline-color-main headline-center", main: "POINT", sub: "3つの特徴" }) %>
+
+    <ul class="point-list">
+  <% for(let i = 0; i < 3; i++) { %>
+  <li class="point-item">
+    <%- include("../modules/components/_card.html") %>
+  </li>
+   <% } %>
+ </ul>
 </section>

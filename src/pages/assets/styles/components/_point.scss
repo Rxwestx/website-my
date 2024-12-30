@@ -1,1 +1,16 @@
 @use "../const" as cn;
+
+.point{
+  padding: 160px 120px;
+}
+.point-list{
+  display: flex;
+  justify-content: center;
+  // flex-wrap: wrap;
+  margin: 80px  -12px -12px; 
+  width: 100%;  
+}
+.point-item{
+  padding: 12px;
+  margin: 12px;
+}
