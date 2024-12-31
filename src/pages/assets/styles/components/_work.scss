@@ -1,1 +1,10 @@
 @use "../const" as cn;
+
+.work{}
+.work-img{
+  > img {}
+}
+.work-data{
+  >dt{}
+  >dd{}
+}
