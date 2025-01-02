@@ -45,7 +45,14 @@
     border-radius: 74px;
     font-size: 14px;
   }
-  &.link-full{
+  &.link-full {
     width: 100%;
+  }
+  &.link-contact {
+    background: cn.$color-accent;
+    padding: 28px 158px;
+    &::after {
+      background: cn.$color-accent-dark;
+    }
   }
 }
