@@ -1,1 +1,48 @@
 @use "../const" as cn;
+
+.showcase{
+  padding: 140px 0 120px;
+  overflow: hidden;
+
+}
+.showcase-header{
+  padding: 0px 120px;
+  margin-bottom: 75px;
+}
+.showcase-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase-header-headline{
+  font-weight: bold;
+  font-size: 48px;
+  color: cn.$color-main;
+  letter-spacing: .05em;
+}
+.showcase-contents{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.showcase-list{
+  overflow: scroll;
+  padding: 80px;
+  scrollbar-color: cn.$color-sub #333;
+  scrollbar-width: thin;
+  padding-right: 120px;
+}
+.showcase-item{
+  vertical-align: top;
+  white-space: wrap;
+  display: inline-block;
+  width: 772px;
+  margin-right: 16px;
+  &:first-child {
+    width: 120px;
+    visibility: hidden;
+    margin: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
