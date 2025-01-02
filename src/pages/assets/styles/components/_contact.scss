@@ -1,0 +1,21 @@
+@use "../const" as cn;
+
+.contact {
+  margin: 0 120px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -145px;
+}
+
+.contast-inner {
+  text-align: center;
+  background: #fff;
+  padding: 52px;
+  border-radius: 8px;
+  > h1 {
+    color: cn.$color-main;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 37px;
+  }
+}
