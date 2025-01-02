@@ -13,12 +13,12 @@
 @use "components/headline";
 @use "components/card";
 @use "components/panel";
+@use "components/work"; 
 @use "components/showcase";
-
 @use "components/about";
 @use "components/point";
 @use "components/course";
-@use "components/work";
+@use "components/contact";
 
 // utilities
 @use "utilities/utilities";
