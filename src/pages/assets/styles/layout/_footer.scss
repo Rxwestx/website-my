@@ -1,0 +1,37 @@
+@use "../const" as cn;
+
+.footer{
+  background-color: cn.$color-core;
+  color: #fff;
+  padding: 260px 120px 120px;
+}
+.footer-top{
+  display: flex;
+}
+.footer-top-logo{
+  margin-bottom: 40px;
+}
+.footer-top-info{
+  margin-right: 110px;
+  width: 250px;
+  > address {
+    font-style: normal;
+    color: cn.$color-address;
+
+
+  }
+}
+.footer-top-nav{
+  margin-right: 110px;
+  width: 100px;
+  > a {
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.footer-top-others{
+  width: 410px;
+}
+.footer-top-sns{}
+.footer-top-line{}
