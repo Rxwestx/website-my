@@ -1,0 +1,37 @@
+@use "../const" as cn;
+ 
+.trigger {
+  // ToDo
+  // display: none;
+  position: fixed;
+  z-index: 99;
+  top: 40px;
+  right: 40px;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  width: 40px;
+  height: 30px;
+  &::before,
+  &::after,
+  > span { 
+    content: "";
+    display: block;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid cn.$color-main;
+    // ToDo
+    // position: absolute;
+    // transition: transform ease-in-out 0.15s;
+  }
+  &::before{
+  position: absolute;
+  top: 0;
+  // transform-origin: top right;
+  }
+  &::after {
+  position: absolute;
+  bottom: 0;
+  // transform-origin: bottom right;
+  }
+}
