@@ -1,4 +1,3 @@
-import { test } from "./modules/test";
+import { nav } from "./modules/nav";
 
-test();
-
+nav();
