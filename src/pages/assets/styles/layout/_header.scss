@@ -1,22 +1,42 @@
-@use"../const" as cn;
+@use "../const" as cn;
 
-.header{
+.header {
   width: 100%;
-  position:absolute;
-  z-index: 19px;
+  position: absolute;
+  z-index: 19;
   top: 60px;
   left: 0;
 }
-.header-inner{
+.header-inner {
   margin: 0 80px;
 }
-.header-flex{
+.header-flex {
   width: 100%;
   padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.headert-logo{
-  > img {}
+.header-logo {
+  > img {
+  }
+}
+
+@media screen and (max-width: cn.$bp-sm) {
+  .header {
+    top: 24px;
+  }
+  .header-inner {
+    margin: 0 40px;
+  }
+  .header-flex {
+    padding: 10px 0;
+  }
+  .header-logo {
+    width: 70px;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
