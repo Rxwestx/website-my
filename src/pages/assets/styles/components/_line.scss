@@ -9,6 +9,13 @@
   > dt {
     margin-bottom: 10px;
   }
-  >dd {}
+  // >dd {}
 }
-    
+
+@media screen and (max-width: cn.$bp-sm) {
+  // .line{}
+  .line-img{
+    width: 100px;
+    height: 100px;
+  }
+}
