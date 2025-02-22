@@ -56,3 +56,18 @@
     }
   }
 }
+
+@media screen and (max-width: cn.$bp-sm) {
+  .link {
+    padding: 14px 43px;
+    font-size: 14px;
+    
+    // Modifier class
+    &.link-nav {
+      padding: 18px 50px;
+    }
+    &.link-contact {
+      padding: 18px 59px;
+  }
+  }
+}
