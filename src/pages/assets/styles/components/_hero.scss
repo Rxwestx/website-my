@@ -1,3 +1,4 @@
+
 @use "../const" as cn;
 
 @keyframes infiniteCarousel {
@@ -45,7 +46,8 @@
       border-bottom: 2px solid cn.$color-main;
       position: absolute;
       left: 0;
-      bottom: 0.1em;
+      bottom: .1em;
+      
     }
   }
   &::after {
@@ -60,6 +62,7 @@
     transform-origin: right center;
     transform: scaleX(1);
     transition: transform 0.25s 0.25s cubic-bezier(0.28, -0.09, 0.58, 1);
+    display: none !important; // TODO: remove this line
   }
 }
 .hero-images {
@@ -81,4 +84,32 @@
     width: auto;
     height: 286px;
   }
+}
+
+@media screen and (max-width: cn.$bp-sm) {
+  .hero-inner {
+    left: 0;
+    width: 100%;
+  }
+  .hero-headline {
+    width: 100%;
+    text-align: center; 
+    font-size: 14px;
+  }
+  .hero-headline-text {
+    > span {
+      display: block;
+      font-size: 32px;
+      white-space: nowrap;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .hero-images-item {
+    > img {
+      height: 143px;
+    }
+  }
+  
 }
