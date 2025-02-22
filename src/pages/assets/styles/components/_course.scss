@@ -14,3 +14,20 @@
 .course-item{
   width: 49.3%;
 }
+
+@media screen and (max-width: cn.$bp-sm) {
+  .course{
+    padding: 20px 20px 30px;
+  }
+  .course-lis{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .course-item{
+    width: 100%;
+    margin-bottom: 20px;
+    &:nth-child {
+      margin-bottom: 0;
+    }
+  }
+}

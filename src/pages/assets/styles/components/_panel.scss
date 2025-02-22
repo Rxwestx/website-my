@@ -7,8 +7,10 @@
   border-radius: 8px;
   text-align: center;
   padding: 85px 20px 60px;
-  transition:background-color ease-out .2s, border-color ease-out .2s;
-  
+  transition:
+    background-color ease-out 0.2s,
+    border-color ease-out 0.2s;
+
   &:hover {
     border-color: cn.$color-sub;
     background: cn.$color-sub;
@@ -16,7 +18,7 @@
     .panel-headline {
       padding-right: 70px;
       > span {
-        background-color: rgba(#fff, .2);
+        background-color: rgba(#fff, 0.2);
         transform: translateY(-50%) scale(1.1);
 
         &::after {
@@ -36,20 +38,20 @@
   position: relative;
   display: inline-block;
   padding-right: 50px;
-  transition:padding ease-out .2s;
+  transition: padding ease-out 0.2s;
 
-  >span {
+  > span {
     margin-top: 1px;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(cn.$color-sub, .2);
+    background: rgba(cn.$color-sub, 0.2);
     width: 34px;
     height: 34px;
     border-radius: 50%;
     border: 0px solid#fff;
-    transition: transform ease-out .2s background-color ease-out .2s;
+    transition: transform ease-out 0.2s background-color ease-out 0.2s;
     margin-top: 4px;
     &::after {
       content: "";
@@ -57,15 +59,23 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background:cn.$color-sub;
+      background: cn.$color-sub;
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50% , -50%) scale(1);
-      transition:all ease-out .2s;
+      transform: translate(-50%, -50%) scale(1);
+      transition: all ease-out 0.2s;
     }
   }
-
 }
 // .panel-disc {}
-      
+
+@media screen and (max-width: cn.$bp-sm) {
+  .panel {
+    padding: 20px;
+  }
+  .panel-headline {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
