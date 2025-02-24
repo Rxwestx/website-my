@@ -15,7 +15,7 @@
 }
 
 .about-disc {
-margin: 80px 0;
+  margin: 80px 0;
   p {
     font-size: 24px;
     line-height: 1.5;
@@ -32,4 +32,29 @@ margin: 80px 0;
   left: 0;
   width: 100%;
   white-space: nowrap;
+}
+
+@media screen and (max-width: cn.$bp-sm){
+  .about {
+    padding: 20px;
+    
+  }
+  .about-container {
+    margin-bottom: 70px;
+  }
+  .about-disc {
+    margin: 40px 0;
+    > p {
+      font-size: 14px;
+      margin-bottom: 17px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about-bottom {
+    color: cn.$color-stream;
+    font-size: 62px;
+  }  
 }
