@@ -46,3 +46,20 @@
   text-align-last: left;
   letter-spacing: 0.04em;
 }
+
+@media screen and (max-width: cn.$bp-sm) {
+  .card {
+    padding: 20px;
+  }
+  .card-headline {
+    font-size: 18px;
+    margin-bottom: 16px;
+    &::before {
+      display: none;
+    }
+  }
+  .card-disc {
+    margin-top: 18px;
+  }
+  
+}

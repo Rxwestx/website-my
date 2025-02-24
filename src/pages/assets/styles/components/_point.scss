@@ -1,16 +1,33 @@
 @use "../const" as cn;
 
-.point{
+.point {
   padding: 160px 120px;
 }
-.point-list{
+.point-list {
   display: flex;
   justify-content: center;
   // flex-wrap: wrap;
-  margin: 80px  -12px -12px; 
-  width: 100%;  
+  margin: 80px -12px -12px;
+  width: 100%;
 }
-.point-item{
+.point-item {
   padding: 12px;
-  margin: 12px;
+  width: 31%;
+}
+
+@media screen and (max-width: cn.$bp-sm) {
+  .point {
+    padding: 20px;
+  }
+  .point-list {
+    margin: 40px 0 0;
+    flex-direction: column;
+  }
+  .point-item {
+    width: 100%;
+    margin-bottom: 0 0 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
