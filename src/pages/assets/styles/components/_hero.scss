@@ -87,6 +87,9 @@
 }
 
 @media screen and (max-width: cn.$bp-sm) {
+  .hero{
+    margin-bottom: 40px;
+  }
   .hero-inner {
     left: 0;
     width: 100%;

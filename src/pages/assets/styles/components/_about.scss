@@ -37,13 +37,14 @@
 @media screen and (max-width: cn.$bp-sm){
   .about {
     padding: 20px;
+    margin: 0 20px;
     
   }
   .about-container {
     margin-bottom: 70px;
   }
   .about-disc {
-    margin: 40px 0;
+    margin:  20px 0px 40px;
     > p {
       font-size: 14px;
       margin-bottom: 17px;
